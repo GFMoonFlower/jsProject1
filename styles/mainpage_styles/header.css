@@ -1,0 +1,467 @@
+.menu_logo{
+  position: absolute;
+  z-index: 1;
+  right: 20px;
+  top: 30px;
+  color: white;
+  font-weight: 900;
+  font-size: 5vw;
+  letter-spacing: -0.3vw;
+  }
+ 
+  @media(min-width: 1000px){
+    .menu_logo{
+      font-size: 3.5vw;
+      top: 40px;
+      letter-spacing: -0.3vw;
+    }
+  }
+  @media(min-width: 1200px){
+    .menu_logo{
+      font-size: 3vw;
+      top: 40px;
+      letter-spacing: -0.3vw;
+    }
+  }
+.header_wrapper{
+    font-family: 'Roboto';
+    
+  }
+  
+  .header_emptyBlock_overlay{
+    display: hidden;
+  }
+  .filter2{
+    background-color: black;
+    
+    
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: all 5s ease-in-out;
+    
+  }
+
+  
+  .header_fixedMenuBtn:hover{
+      background-color: rgba(188, 190, 190, 0.8);
+  }
+  
+  .header_emptyBlock{
+  
+    position: relative;
+    background-color: transparent;
+    height: 80vh;
+    top: 0px;
+  
+  overflow: hidden;
+    z-index: 0;
+    
+  }
+  .header_fixedImg_wrapper{
+    position: fixed;
+   width: 145vh;
+  
+   left: 50%;
+   transform: translate(-50%, 0);
+   object-fit: cover;
+   
+   
+  }
+   .VideoTag{
+    display: block;
+    max-width: 100%;
+    max-height: 100%;
+   } 
+    
+    .header_nav{
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      position: relative;
+      top: 16px; 
+    }
+    .header_animated_link {
+      font-family: 'Roboto';
+      color: rgb(71, 71, 71);
+    
+      margin-right: 23px;
+      
+    }
+    .loadingVeil{
+      background-color: rgb(0, 0, 0);
+      position: fixed;
+      top: 0px;
+      z-index: 100;
+      animation-duration: 3s;
+      animation-name: loading_animation;
+      opacity: 0;
+   
+    }
+   
+ 
+  @keyframes loading_animation {
+    0%{
+      opacity: 1;
+      width: 100%;
+      height: 110%;
+    }
+    80%{
+     opacity: 1;
+    }
+    99%{
+      width: 100%;
+      height: 110%;
+    }
+    100%{
+     height: 0px;
+     width: 0px;
+     
+     
+   }
+  }
+  .loadingVeil_txt_container{
+    border: 1px solid white;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    color: rgb(248, 248, 248);
+    justify-content: center;
+    align-items: center;
+    font-size: 2.5rem;
+    font-weight: 900;
+    
+  }
+  .loadingVeil_txt{
+    margin-left: 0.4rem;
+  }
+  .txt1{
+    animation: showWord1;
+    opacity: 0;
+    animation-duration: 2s;
+  }
+  .txt2{
+    animation: showWord2;
+    opacity: 0;
+    animation-duration: 2s;
+  }
+  .txt3{
+    animation: showWord3;
+    opacity: 0;
+    animation-duration: 2s;
+  }
+  .txt4{
+    animation: showWord4;
+    opacity: 0;
+    animation-duration: 2s;
+  }
+  .txt5{
+    animation: showWord5;
+    opacity: 0;
+    animation-duration: 2s;
+  }
+  @keyframes showWord1 {
+    19%{opacity: 0;}
+    20%{opacity: 1;}
+    90%{
+     opacity: 1;
+    }
+    100%{
+     opacity: 0;
+    }
+   }
+  @keyframes showWord2 {
+    29%{opacity: 0;}
+    30%{opacity: 1;}
+    90%{
+     opacity: 1;
+    }
+    100%{
+     opacity: 0;
+    }
+   }
+   @keyframes showWord3 {
+    39%{opacity: 0;}
+    40%{opacity: 1;}
+    90%{
+     opacity: 1;
+    }
+    100%{
+     opacity: 0;
+    }
+   }
+   @keyframes showWord4 {
+    49%{opacity: 0;}
+    50%{opacity: 1;}
+    90%{
+     opacity: 1;
+    }
+    100%{
+     opacity: 0;
+    }
+   }
+   @keyframes showWord5 {
+    59%{opacity: 0;}
+    60%{opacity: 1;}
+    90%{
+     opacity: 1;
+    }
+    100%{
+     opacity: 0;
+    }
+   }
+    @media (min-width: 780px) {
+      
+      .header_fixedMenuBtn_txt{   
+        font-size: 1.1rem;
+      }
+      .loadingVeil{     
+        animation-name: loading_animation2;
+      }
+    @keyframes loading_animation2 {
+      0%{
+        opacity: 1;
+        width: 100%;
+        height: 110%;
+      }
+      80%{
+       opacity: 1;
+      }
+      99%{
+        width: 100%;
+        height: 110%;
+      }
+      100%{
+       height: 0px;
+       width: 0px;
+       
+       
+     }
+    }
+      .txt1{
+        animation: showWord_w1;
+        opacity: 0;
+        animation-duration: 2s;
+      }
+      .txt2{
+        animation: showWord_w2;
+        opacity: 0;
+        animation-duration: 2s;
+      }
+      .txt3{
+        animation: showWord_w3;
+        opacity: 0;
+        animation-duration: 2s;
+      }
+      .txt4{
+        animation: showWord_w4;
+        opacity: 0;
+        animation-duration: 2s;
+      }
+      .txt5{
+        animation: showWord_w5;
+        opacity: 0;
+        animation-duration: 2s;
+      }
+      @keyframes showWord_w1 {
+        19%{opacity: 0;}
+        20%{opacity: 1;}
+        90%{
+         opacity: 1;
+        }
+        100%{
+         opacity: 0;
+        }
+       }
+      @keyframes showWord_w2 {
+        29%{opacity: 0;}
+        30%{opacity: 1;}
+        90%{
+         opacity: 1;
+        }
+        100%{
+         opacity: 0;
+        }
+       }
+       @keyframes showWord_w3 {
+        39%{opacity: 0;}
+        40%{opacity: 1;}
+        90%{
+         opacity: 1;
+        }
+        100%{
+         opacity: 0;
+        }
+       }
+       @keyframes showWord_w4 {
+        49%{opacity: 0;}
+        50%{opacity: 1;}
+        90%{
+         opacity: 1;
+        }
+        100%{
+         opacity: 0;
+        }
+       }
+       @keyframes showWord_w5 {
+        59%{opacity: 0;}
+        60%{opacity: 1;}
+        90%{
+         opacity: 1;
+        }
+        100%{
+         opacity: 0;
+        }
+       }
+      
+      
+    }
+    @media (min-width: 1000px) {
+      .loadingVeil{
+        top: -60px;
+        animation-name: loading_animation3; 
+      }
+    @keyframes loading_animation3 {
+      0%{
+        opacity: 1;
+        width: 100%;
+        height: 110%;
+      }
+      80%{
+       
+      }
+      99%{
+        width: 100%;
+        opacity: 1;
+        height: 110%;
+      }
+      100%{
+        
+       height: 0px;
+       width: 0px;
+       
+       
+     }
+    }
+      .loadingVeil_txt_container{
+        font-size: 3vw;
+      }
+      .txt1{
+        animation: showWord_w_w1;
+        opacity: 0;
+        animation-duration: 2s;
+      }
+      .txt2{
+        animation: showWord_w_w2;
+        opacity: 0;
+        animation-duration: 2s;
+      }
+      .txt3{
+        animation: showWord_w_w3;
+        opacity: 0;
+        animation-duration: 2s;
+      }
+      .txt4{
+        animation: showWord_w_w4;
+        opacity: 0;
+        animation-duration: 2s;
+      }
+      .txt5{
+        animation: showWord_w_w5;
+        opacity: 0;
+        animation-duration: 2s;
+      }
+      @keyframes showWord_w_w1 {
+        19%{opacity: 0;}
+        20%{opacity: 1;}
+        90%{
+         opacity: 1;
+        }
+        100%{
+         opacity: 0;
+        }
+       }
+      @keyframes showWord_w_w2 {
+        29%{opacity: 0;}
+        30%{opacity: 1;}
+        90%{
+         opacity: 1;
+        }
+        100%{
+         opacity: 0;
+        }
+       }
+       @keyframes showWord_w_w3 {
+        39%{opacity: 0;}
+        40%{opacity: 1;}
+        90%{
+         opacity: 1;
+        }
+        100%{
+         opacity: 0;
+        }
+       }
+       @keyframes showWord_w_w4 {
+        49%{opacity: 0;}
+        50%{opacity: 1;}
+        90%{
+         opacity: 1;
+        }
+        100%{
+         opacity: 0;
+        }
+       }
+       @keyframes showWord_w_w5 {
+        59%{opacity: 0;}
+        60%{opacity: 1;}
+        90%{
+         opacity: 1;
+        }
+        100%{
+         opacity: 0;
+        }
+       }
+      
+      
+    
+     .header_emptyBlock{
+      height: 0px;
+      top: 0px;
+      
+      left: 50%;
+      width: 50%;
+      
+    }
+    .header_fixedImg_wrapper{
+      position:fixed;
+     width: 50%;
+    left: 0px;
+  
+    height: 100%;
+     
+     object-fit: cover;
+     overflow: hidden;
+     display: flex;
+     justify-content: center;
+     transform: none;
+    }
+  
+     .VideoTag{
+      display: block;
+      position: relative;
+      max-width: 330%;
+      height: 100%;
+      left: 0px;
+     
+      
+     } 
+     .minMenuClosed{
+      display: none;
+     }
+     .minMenuFilterActive{
+      display: none;
+     }
+  }
+  
+    

@@ -1,0 +1,467 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+body{
+    font-family: "Roboto";
+}
+.about{
+    position: relative;
+    background-color: rgb(255, 255, 255);
+    width: 100%;
+    z-index: 10;
+    
+    font-family: 'Roboto';
+    color: rgb(65, 65, 65);
+    padding: 2rem 20px 3rem 20px;
+   cursor: pointer;
+    
+    
+}
+.about_partners_text{
+    font-size: 2.4rem;
+    font-weight: bold;
+    color: rgb(0, 0, 0);
+    
+    margin-bottom: 50px;
+    line-height: 2.6rem;
+}
+.about_partners_list li{
+    font-size: 3rem;
+    font-weight: 400;
+}
+
+.about_partners_list li:nth-child(2){
+ border-top: 1px solid rgb(199, 196, 196, 0.5);
+}
+
+li.about_partners_brands{
+    border-bottom: 1px solid rgb(199, 196, 196, 0.5);
+    padding: 1rem 0 1rem 0;
+    font-size: 1.85rem;
+}
+
+li.about_list_main_li{ 
+   
+    font-size: 1.3rem;
+    margin-bottom: 35px;
+}
+.marker_circle{
+    background-color: black;
+    border-radius: 50%;
+    display: inline-block;
+    width: 0.7rem;
+    height: 0.7rem;
+    margin-right: 1.6rem;
+}
+.about_partners_list{
+    margin-bottom: 3.9rem;
+}
+.about_btn_wrapper{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 5rem; 
+  }
+.about_btn_wrapper_btn{
+    background-color: rgba(223, 228, 228, 0.4);
+    font-size: 1.2rem;
+    width: 320px;
+    
+    border-radius: 22px;
+    padding: 1rem 0 1rem 0;
+    letter-spacing: 0.05rem;
+
+    display: flex;
+    flex-direction: row;
+    justify-self: center;
+justify-content: center;
+}
+.about_btn_wrapper_btn:hover{
+    background-color: black;
+    color: aliceblue;
+    cursor: pointer;
+}
+
+.about_partners{
+    border-bottom: 1px solid rgb(199, 196, 196, 0.5);
+    margin-bottom: 3.4rem;
+}
+
+
+
+
+
+
+
+.aboutUs {
+
+}
+.aboutUs > p{
+ font-size: 2rem;
+ line-height: 2.6rem;
+ margin-bottom: 90px;
+ 
+}
+.aboutUs_list{
+  
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 3rem;
+}
+.aboutUs_list > div{
+
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 4rem;
+}
+.aboutUs_list > div > div{
+    font-weight: 800;
+    color: rgb(22, 22, 22);
+    font-size: 4.5rem;
+    margin-bottom: 1rem;
+
+}
+.aboutUs_list > div > p{
+    font-size: 1rem;
+   text-align: center;
+}
+.about_animationOnRight_Big{
+    display: none;
+}
+.about_overlay{
+    display: none;
+}
+.about_overlay_decoration_whiteLine{
+    display: none;
+}
+@media (min-width: 780px) {
+    .about_btn_wrapper_btn{
+        justify-self: flex-end;
+    }
+    .about{
+        padding: 3rem 40px 3rem 40px ;
+  
+    }
+    .about_partners_text{
+        font-size: 3.8rem;
+        font-weight: 900;
+        line-height: 3.6rem;
+        border-bottom: 1px solid rgb(199, 196, 196, 0.5);
+        padding-bottom: 4rem;
+        margin-bottom: 2rem;
+       
+    }
+    li.about_partners_brands{
+        border-bottom: none;
+        position: relative;
+        left: 50%;
+        top: -50px;
+        font-size: 1.9rem;
+        color: black;
+        padding: 0.5rem 0 0.5rem 0;
+    }
+    .about_partners_list li:nth-child(2){
+        border-top: none;
+       }
+    li.about_list_main_li{ 
+        font-size: 1.1rem;
+        
+    }
+    .btn1_wrap{
+       display: flex;
+       justify-content: start;
+       
+       width: 50%;
+       position: relative;
+       left: 50%;
+       margin-top: -3.8rem;
+       margin-bottom: 9rem;
+    
+    }
+    .btn1{
+        width: 100%;
+        
+    }
+    .about_partners{
+        margin-bottom: 1rem;
+    }
+    .aboutUs .about_list_main_li{
+        font-size: 1.1rem;
+    }
+    .aboutUs_list{
+        display: grid;
+        grid-template-columns: 48% 48%;
+        
+        margin-bottom: 3rem;
+       grid-row-gap: 4rem;
+       
+        
+    }
+    .aboutUs_list > div > p{
+        font-size: 1rem;
+       text-align: center;
+       line-height: 1.3rem;
+    }
+    .aboutUs_list > div {
+        
+        display: flex;
+        justify-self: center;
+        
+    }
+    .aboutUs > p{
+        font-size: 2rem;
+        width: 580px;
+    }
+    .aboutUs_list > div > div{
+        font-size: 5rem;
+    }
+      
+}
+  
+   @media (min-width: 1000px) {
+    .about{ 
+        width: 50%;
+        padding: 110vh 2.5rem 3rem 2.5rem;
+        left: 50%;
+
+    }
+    .about_overlay{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: absolute;
+        height: 300vh;
+        background-color: black;
+        
+        top: 0rem;
+        left: 0rem;
+        width: 100%;
+        color: white;
+        transition: opacity 0.1s ease-in;
+        
+    }
+    .about_overlay_container{
+        
+        height: 100vh;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+
+        
+    }
+    .about_overlay_txt_container{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+        width: 100%;
+        
+        
+    }
+    .about_overlay_txt{
+        font-size: 17vw;
+        font-weight: 900;
+    }
+    .overlay_txt1{
+        margin-right: -10px;
+        animation-name: anim_T_letter1;
+        animation-iteration-count: 1;
+        animation-duration: 2.5s;
+        
+    }
+    @keyframes anim_T_letter1 {
+        0%{
+            opacity: 0;
+        }
+        80%{
+            opacity: 0;
+        }
+        90%{
+            opacity: 1;
+        }
+    }
+    .overlay_txt2{
+        animation-name: anim_T_letter2;
+        animation-iteration-count: 1;
+        
+        animation-duration: 3.5s;
+        
+    }
+    @keyframes anim_T_letter2 {
+        0%{
+            opacity: 0;
+        }
+        80%{
+            opacity: 0;
+        }
+        90%{
+            opacity: 1;
+            
+        }
+    }
+    .overlay_txt3{
+        margin-left: -8px;
+        animation-name: anim_T_letter3;
+        animation-iteration-count: 1;
+        
+        animation-duration: 4s;
+    }
+    @keyframes anim_T_letter3 {
+        0%{
+            opacity: 0;
+        }
+        80%{
+            opacity: 0;
+        }
+        90%{
+            opacity: 1;
+            
+        }
+    }
+    .about_overlay_down{
+        width: 3.7vw;
+        height: 4vw;
+        background-color: rgb(219, 219, 219);
+        border-radius: 50%;
+        position: relative;
+         border: 1px solid rgb(219, 219, 219);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        bottom: 3vw;
+        
+    }
+    .about_overlay_down_arrow{
+        position: relative;
+        top: -3px;
+    }
+    .about_overlay_down_arrow:before{
+        content: ' ';
+        display: flex;
+        justify-self: center;
+       
+        
+        height: 1.3vw;
+       
+        border-right: 0.1vw solid black;
+        position: relative;
+        top: 4px;
+        
+    }
+    .about_overlay_down_arrow:after{
+        content: ' ';
+        display: flex;
+        
+        
+        border-right: 0.1vw solid rgb(0, 0, 0);
+        border-bottom: 0.1vw solid rgb(0, 0, 0);
+        width: 7px;
+        height: 7px;
+        transform: rotateZ(45deg);
+        position: relative;
+        top: -2px;
+        
+        
+        
+    }
+    .about_overlay_decoration_whiteLine{
+        position: relative;
+        display: block;
+        height: 1px;
+        width: 100%;
+        margin-bottom: 3vw;
+        
+    }
+    
+    .about_partners_text{
+        font-size: 3.5vw;
+        line-height: 3.5vw;
+        padding-bottom: 5vw;
+        margin-bottom: 0px;
+        border: none;
+    }
+    li.about_partners_brands{
+        font-size: 1.7vw;
+    }
+    .aboutUs > p{
+        font-size: 1.8vw;
+        width: 68%;
+        line-height: 2.3vw;
+    }
+    .about_btn_wrapper{
+        display: flex;
+        justify-content: center;
+        margin-bottom: 6.5vw; 
+    }
+    .aboutUs_list > div > div{
+        font-size: 5vw;
+    }
+    .aboutUs_list > div{
+        width: 90%;
+    }
+    li.about_list_main_li, .aboutUs li.about_list_main_li{ 
+   
+        
+        width: 40%;
+       
+        
+    }
+    
+}
+
+@media (min-width: 1300px) {
+    
+    .about_overlay_down_arrow:after{
+        border-right: 2px solid rgb(0, 0, 0);
+        border-bottom: 2px solid rgb(0, 0, 0);
+        width: 0.9vw;
+        height: 0.9vw;
+        top: -7px;
+   
+    }
+    .about_overlay_down_arrow:before{
+        height: 1.8vw;
+        border-right: 2px solid black;
+        top: 7px;
+    }
+}
+@media (min-width: 1520px) {
+    
+    .about_overlay_down_arrow:after{
+        border-right: 2px solid rgb(0, 0, 0);
+        border-bottom: 2px solid rgb(0, 0, 0);
+        width: 0.9vw;
+        height: 0.9vw;
+        top: -7px;
+   
+    }
+    .about_overlay_down_arrow:before{
+        height: 1.8vw;
+        border-right: 2px solid black;
+        top: 8px;
+    }
+}
+@media (min-width: 1665px) {
+    
+    .about_overlay_down_arrow:after{
+        border-right: 2px solid rgb(3, 3, 3);
+        border-bottom: 2px solid rgb(0, 0, 0);
+        width: 0.9vw;
+        height: 0.9vw;
+        top: -7px;
+   
+    }
+    .about_overlay_down_arrow:before{
+        height: 1.8vw;
+        border-right: 2px solid black;
+        top: 11px;
+    }
+}
+@media (min-width: 1300px) {
+    li.about_list_main_li, .aboutUs li.about_list_main_li{  
+        font-size: 1.1vw;  
+    }
+}

@@ -1,0 +1,156 @@
+.header_minMenu{
+    
+}
+.minMenuActive_Footer > div > p:hover{
+color: grey;
+cursor: pointer;
+}
+.minMenuClosed{
+    
+    
+    position: fixed;
+    z-index: 0;
+    width: 100%;
+    height: 100vh;
+    color: azure;
+    flex-direction: column;
+    
+    
+    display: flex;
+    opacity: 0;
+    transition: opacity 0s;
+    transition-delay: 0s;
+    
+     
+}
+.minMenu_active{
+    
+    z-index: 12;
+    opacity: 1;
+    transition: opacity 1s;
+    transition-delay: 1s;
+    
+    
+}
+
+.header_close_btn, .header_min_openBtn{
+    font-family: 'Roboto';
+    position: fixed;
+    font-size: 1.2rem;
+    background-color: rgba(188, 190, 190, 0.4); 
+    border-radius: 60px;
+    top: 33px;
+    
+    width: 120px;
+    height: 50px;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    z-index: 13;
+    left: 30px;
+}
+
+.menuMin_openBtn_hidden{
+    display: none;
+}
+.minMenuActive_Nav{
+    color: rgb(255, 255, 255);
+    font-family: 'Roboto';
+    font-size: 3.8rem;
+    font-weight: 900;
+    padding: 0rem 2rem 0rem 2rem;
+  
+    
+    
+}
+
+
+.minMenuClosed{
+    
+    
+}
+.miMenuVeil{
+    background-color: rgb(7, 7, 7);
+    
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    
+    z-index: 2;
+    opacity: 0;
+    transition: opacity 1s;
+}
+.active{
+    
+    z-index: 12;
+    opacity: 1;
+    transition: opacity 1s;
+
+}
+.minMenuActive_Nav_ul > li{
+    margin-bottom: 1.2rem;
+}
+.minMenuActive_Nav_ul > li > a{
+    color: antiquewhite;
+  }
+  .minMenuActive_Nav_ul > li :hover{
+    color: rgb(92, 92, 92);
+  }
+.minMenuActive_Footer{
+    color: rgb(255, 255, 255);
+    font-family: 'Roboto';
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    font-size: 1.36rem; 
+    padding: 0rem 2rem;
+}
+
+.minMenuActive_Footer > div > p{
+    margin-bottom: 2rem;
+}
+.header_showClosedBtn{
+    border-radius: 50%;
+    background-color: rgb(238, 238, 238);
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 1px;
+}
+.header_showClosedBtn_x:after{
+    display: flex;
+    color: rgb(5, 5, 5);
+    background-color: white;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+justify-content: center;
+align-items: center;
+font-size: 1.3rem;
+    content: "\00d7"; /* This will render the 'X' */ 
+}
+.header_showMoreBtn{
+    background-color: rgb(255, 255, 255); 
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    font-weight: 400;
+    padding-top: 4px;
+    
+}
+.minMenuActive_Nav_wrap1{
+    display: flex;
+    height: 100%;
+    padding-top: 10rem;
+    flex-direction: column;
+    justify-content: space-around;
+}
+@media(min-width: 1000px){
+    .header_minMenu{
+        display: none;
+         
+    }
+}

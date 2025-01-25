@@ -1,0 +1,201 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+.TRALabs{
+    position: relative;
+    background-color: rgb(255, 255, 255);
+    color: rgb(255, 255, 255);
+    font-family: 'Roboto';
+    z-index: 10;
+   display: flex;
+   flex-direction: column;
+    justify-content: center;
+    height: 1200px;
+
+    
+}
+.TRALabs_anim{
+    
+}
+.TRALabs_main{
+    position: relative;
+    background-color: rgb(255, 255, 255);
+    color: rgb(255, 255, 255);
+    font-family: 'Roboto';
+   padding: 5.3rem 20px 1.5rem 20px;
+   z-index: 90;
+   height: 1000px;
+   width: 70%;
+   transition: all 0.5s ease-in-out;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-self: center;
+}
+.TRALabs_main_anim{
+    height: 1200px;
+    width: 100%;
+    background-color: rgb(0, 0, 0);    
+}
+.TRALabs_wrapper{
+    padding: 6rem 20px 1rem 20px ;
+    display: flex;
+    flex-direction: column;
+    
+}
+.TRALabs_header {
+    display: flex;
+    margin-bottom: 4rem;
+    justify-content: center;
+   
+}
+.TRALabs_header > p:nth-child(1){
+    font-size: 5.6rem;
+    font-weight: bold;
+    letter-spacing: -0.5rem;
+}
+.TRALabs_header > p:nth-child(2){
+    margin-top: 0.5rem;
+    font-size: 2.4rem;
+    font-weight: bold;
+}
+.TRALabs_img_wrapper{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2rem;
+}
+.TRALabs_img{
+        
+        width: 70%;
+        height: 100%;
+        margin-bottom: 4.6rem;
+        filter: grayscale(93%);
+
+        
+}
+
+
+
+  .TRALabs_img:hover{
+    filter: none;
+  }
+  .TRALabs_content_txt{
+    text-align: center;
+    
+    font-size: 2.6rem;
+    font-weight: bold;
+    margin-bottom: 4.3rem;
+    line-height: 2.7rem;
+    width: 90%;
+    display: flex;
+    align-self: center;
+  }
+  .TRALabs_btn_wrapper{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 5rem;
+   
+    
+  }
+.TRALabs_btn_wrapper_btn{
+    background-color: rgba(198, 207, 207, 0.4); 
+    border-radius: 22px;   
+    letter-spacing: 0.05rem;
+}
+.TRALabs_btn_wrapper_btn:hover{
+    background-color: rgb(252, 252, 252);
+    color: rgb(17, 17, 17);
+    cursor: pointer;
+}
+.TRALabs_btn_wrapper_btn_txt{
+    font-size: 1.2rem;
+    padding: 0.8rem 2.5rem 0.8rem 2.5rem;
+}
+
+@media (min-width: 780px) {
+    .TRALabs_btn_wrapper_btn_txt{
+        font-size: 1.1rem;
+    }
+    .TRALabs_img{
+        width: 310px;
+       height: 400px;
+      
+    }
+    .TRALabs_content_txt{
+        font-size: 3.8rem;
+        line-height: 3.7rem;
+        width: 700px;
+        
+    }
+   
+}
+.VideoTag2, .header_img_wrapper, .emptyBlockTRALAbs{
+    display: none;
+}
+@media (min-width: 1000px) {
+    .TRALabs{       
+        height: 86vw;
+    }
+    .TRALabs_content_txt{
+        font-size: 3.7vw;
+        width: 42vw;
+        line-height: 3.4vw;
+        margin-bottom: 3rem;
+    }
+    .TRALabs_main{
+        height: 65%;
+        width: 90%;
+        padding: 1rem 0px 8rem 0px;
+    }
+    .TRALabs_header{
+        margin-bottom: 3rem;
+    }
+    .TRALabs_main_anim{
+        height: 100%;
+        width: 100%;
+    }
+    .TRALabs_wrapper{
+        margin-bottom: -4rem;
+    }
+    .TRALabs_img{
+        width: 65%;
+        height: 78%;
+            
+        filter: grayscale(93%);
+    }
+    .TRALabs_img_wrapper{
+        margin-bottom: -30px;
+    }
+
+
+  
+    .TRALabs_wrap_main{
+
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        
+       
+    }
+    .emptyBlockTRALAbs{
+        display: block;
+    }
+    .header_img_wrapper{
+        position: relative;    
+        left: 0px;
+        height: 100%;       
+        object-fit: contain;
+        overflow: hidden;      
+        justify-content: center;
+        align-items: end;
+        display: none;
+       
+      }
+    .VideoTag2{
+        position: relative;
+        max-width: 330%;
+        height: 100vh;
+        bottom: 0px;     
+        display: none;
+    }
+}
+

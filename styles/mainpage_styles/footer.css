@@ -1,0 +1,79 @@
+.footer{
+    background-color: black;
+    position: relative;
+    color: rgb(239, 240, 241);
+    font-family: 'Roboto';
+    
+    
+}
+.footer_content{
+    display: flex;
+    flex-direction: column;
+}
+.footer_content_main{
+    display: grid;
+    
+    margin-bottom: 9rem;
+    font-size: 1.2rem;
+    grid-template-columns: 1fr 1fr;
+    font-weight: 400;
+    grid-column-gap: 1rem;
+    
+    color: rgb(255, 255, 255);
+}
+.footer_content_main_nav > ul > li{
+    margin-bottom: 0.7rem;
+}
+.footer_content_contactsAndAddresses{
+    display: grid;
+    
+    font-size: 1.2rem;
+    grid-template-columns: 1fr 1fr;
+    
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-column-gap: 2rem;
+    grid-row-gap: 4.7rem;
+    padding-right: 1rem;
+    font-weight: 400;
+    line-height: 1.6rem;
+    
+}
+.footer_content_main_nav > ul > li:hover{
+    color: grey;
+    cursor: pointer;
+}
+.footer_content_contactsAndAddresses_contacts > p:hover{
+    color: grey;
+    cursor: pointer;
+}
+.footer_content_contactsAndAddresses_address{
+    margin-bottom: 1.6rem;
+}
+
+.footer_wrapper {
+    padding: 4rem 20px 7.6rem 20px;
+}
+.footer_content_additionalInf{
+    color: rgb(151, 150, 148);
+    font-size: 1.1rem;
+    font-weight: 300;
+    line-height: 1.4rem;
+    margin-top: -100px;
+}
+.footer_content_additionalInf > p:nth-child(1){
+    margin-bottom: 2rem;
+}
+.footer_content_additionalInf > p:nth-child(2){
+    margin-bottom: -3.5rem;
+}
+.footer_content_contactsAndAddresses_cityName{
+    margin-bottom: 2rem;
+    font-size: 1.1rem;
+}
+
+@media(min-width: 1000px){
+    .footer{
+        padding: 3rem 50px 3rem 50px;
+       
+      }
+}
